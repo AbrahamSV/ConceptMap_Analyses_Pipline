@@ -1,0 +1,5 @@
+A free form text ( README ) describing the dataset in more details that SHOULD be provided
+
+The raw BIDS data was created using BIDScoin 3.0.8
+All provenance information and settings can be found in ./code/bidscoin
+For more information see: https://github.com/Donders-Institute/bidscoin

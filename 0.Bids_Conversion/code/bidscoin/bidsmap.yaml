@@ -1,0 +1,518 @@
+# --------------------------------------------------------------------------------
+# This is a bidsmap YAML file with the key-value mappings for the different BIDS
+# modalities (anat, func, dwi, etc). The modality attributes are the keys that map
+# onto the BIDS labels. The bidsmap data-structure should be 5 levels deep:
+# dict > dict > list > dict > dict
+#
+# NB:
+# 1) Edit the bidsmap file to your needs before feeding it to bidscoiner.py
+# 2) (Institute) users may create their own bidsmap_[template].yaml or
+#    bidsmap_[sample].yaml file
+#
+# For more information, see:
+# https://github.com/Donders-Institute/bidscoin
+# https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+# --------------------------------------------------------------------------------
+
+
+Options:
+# --------------------------------------------------------------------------------
+# General options
+# --------------------------------------------------------------------------------
+  bidscoin:
+    version: 3.0.8                # BIDScoin version (should correspond with the version in ../bidscoin/version.txt)
+    bidsignore: extra_data/       # Semicolon-separated list of entries that are added to the .bidsignore file (for more info, see BIDS specifications), e.g. extra_data/;pet/;myfile.txt;yourfile.csv
+  dcm2niix:                       # See dcm2niix -h and https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage#General_Usage for more info
+    path: module add dcm2niix;    # Command to set the path to dcm2niix (note the semi-colon), e.g. module add dcm2niix/1.0.20180622; or PATH=/opt/dcm2niix/bin:$PATH; or /opt/dcm2niix/bin/ or '"C:\Program Files\dcm2niix\"' (note the quotes to deal with the whitespace)
+    args: -b y -z y -i n          # Argument string that is passed to dcm2niix. Tip: SPM users may want to use '-z n' (which produces unzipped nifti's, see dcm2niix -h for more information)
+
+
+PlugIns: []
+DICOM:
+# --------------------------------------------------------------------------------
+# DICOM key-value heuristics (DICOM fields that are mapped to the BIDS labels)
+# --------------------------------------------------------------------------------
+  subject: <<SourceFilePath>>     # <<SourceFilePath>> extracts the subject label from the source directory during bidscoiner runtime. A DICOM attribute can also be used as subject-label instead, e.g. <PatientID>
+  session: <<SourceFilePath>>     # <<SourceFilePath>> extracts the session label from the source directory during bidscoiner runtime. A DICOM attribute can also be used as session-label instead, e.g. <StudyID>
+  anat:       # ----------------------- All anatomical runs --------------------
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/t1_mprage_sag_p2_1iso_MGH_5/IM-0001-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: t1_mprage_sag_p2_1iso_MGH
+      SeriesDescription: t1_mprage_sag_p2_1iso_MGH
+      ImageType: "['ORIGINAL', 'PRIMARY', 'M', 'ND', 'NORM']"
+      SequenceName: '*tfl3d1_16ns'
+      SequenceVariant: "['SK', 'SP', 'MP']"
+      ScanningSequence: "['GR', 'IR']"
+      MRAcquisitionType: 3D
+      SliceThickness: '1'
+      FlipAngle: '7'
+      EchoNumbers: 1
+      EchoTime: '2.36'
+      RepetitionTime: '2530'
+      PhaseEncodingDirection: ''
+    bids:
+      acq: t1mpragesagp21isoMGH
+      ce:
+      rec:
+      run: <<1>>
+      mod:
+      suffix: T1w
+  func:       # ----------------------- All functional runs --------------------
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run1_11/IM-0003-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: Lex_Dec_Run1
+      SeriesDescription: Lex_Dec_Run1
+      ImageType: "['ORIGINAL', 'PRIMARY', 'M', 'MB', 'ND', 'MOSAIC']"
+      SequenceName: epfid2d1_88
+      SequenceVariant: "['SK', 'SS']"
+      ScanningSequence: EP
+      MRAcquisitionType: 2D
+      SliceThickness: '2.4000000953674'
+      FlipAngle: '56'
+      EchoNumbers: 1
+      EchoTime: '35'
+      RepetitionTime: '1000'
+      PhaseEncodingDirection: ''
+    bids:
+      task: LexDec
+      acq: epfid2d188
+      ce:
+      dir: COL
+      rec:
+      run: <<1>>
+      echo: '1'
+      suffix: bold
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run2_17/IM-0005-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: Lex_Dec_Run2
+      SeriesDescription: Lex_Dec_Run2
+      ImageType: "['ORIGINAL', 'PRIMARY', 'M', 'MB', 'ND', 'MOSAIC']"
+      SequenceName: epfid2d1_88
+      SequenceVariant: "['SK', 'SS']"
+      ScanningSequence: EP
+      MRAcquisitionType: 2D
+      SliceThickness: '2.4000000953674'
+      FlipAngle: '56'
+      EchoNumbers: 1
+      EchoTime: '35'
+      RepetitionTime: '1000'
+      PhaseEncodingDirection: ''
+    bids:
+      task: LexDec
+      acq: epfid2d188
+      ce:
+      dir: COL
+      rec:
+      run: <<2>>
+      echo: '1'
+      suffix: bold
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run3_23/IM-0007-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: Lex_Dec_Run3
+      SeriesDescription: Lex_Dec_Run3
+      ImageType: "['ORIGINAL', 'PRIMARY', 'M', 'MB', 'ND', 'MOSAIC']"
+      SequenceName: epfid2d1_88
+      SequenceVariant: "['SK', 'SS']"
+      ScanningSequence: EP
+      MRAcquisitionType: 2D
+      SliceThickness: '2.4000000953674'
+      FlipAngle: '56'
+      EchoNumbers: 1
+      EchoTime: '35'
+      RepetitionTime: '1000'
+      PhaseEncodingDirection: ''
+    bids:
+      task: LexDec
+      acq: epfid2d188
+      ce:
+      dir: COL
+      rec:
+      run: <<3>>
+      echo: '1'
+      suffix: bold
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run4_29/IM-0009-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: Lex_Dec_Run4
+      SeriesDescription: Lex_Dec_Run4
+      ImageType: "['ORIGINAL', 'PRIMARY', 'M', 'MB', 'ND', 'MOSAIC']"
+      SequenceName: epfid2d1_88
+      SequenceVariant: "['SK', 'SS']"
+      ScanningSequence: EP
+      MRAcquisitionType: 2D
+      SliceThickness: '2.4000000953674'
+      FlipAngle: '56'
+      EchoNumbers: 1
+      EchoTime: '35'
+      RepetitionTime: '1000'
+      PhaseEncodingDirection: ''
+    bids:
+      task: LexDec
+      acq: epfid2d188
+      ce:
+      dir: COL
+      rec:
+      run: <<4>>
+      echo: '1'
+      suffix: bold
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run5_35/IM-0011-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: Lex_Dec_Run5
+      SeriesDescription: Lex_Dec_Run5
+      ImageType: "['ORIGINAL', 'PRIMARY', 'M', 'MB', 'ND', 'MOSAIC']"
+      SequenceName: epfid2d1_88
+      SequenceVariant: "['SK', 'SS']"
+      ScanningSequence: EP
+      MRAcquisitionType: 2D
+      SliceThickness: '2.4000000953674'
+      FlipAngle: '56'
+      EchoNumbers: 1
+      EchoTime: '35'
+      RepetitionTime: '1000'
+      PhaseEncodingDirection: ''
+    bids:
+      task: LexDec
+      acq: epfid2d188
+      ce:
+      dir: COL
+      rec:
+      run: <<5>>
+      echo: '1'
+      suffix: bold
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run6_41/IM-0013-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: Lex_Dec_Run6
+      SeriesDescription: Lex_Dec_Run6
+      ImageType: "['ORIGINAL', 'PRIMARY', 'M', 'MB', 'ND', 'MOSAIC']"
+      SequenceName: epfid2d1_88
+      SequenceVariant: "['SK', 'SS']"
+      ScanningSequence: EP
+      MRAcquisitionType: 2D
+      SliceThickness: '2.4000000953674'
+      FlipAngle: '56'
+      EchoNumbers: 1
+      EchoTime: '35'
+      RepetitionTime: '1000'
+      PhaseEncodingDirection: ''
+    bids:
+      task: LexDec
+      acq: epfid2d188
+      ce:
+      dir: COL
+      rec:
+      run: <<6>>
+      echo: '1'
+      suffix: bold
+  dwi:        # ----------------------- All diffusion runs ---------------------
+  fmap:       # ----------------------- All fieldmap runs ----------------------
+  beh:        # ----------------------- All behavioural data -------------------
+  pet:        # ----------------------- All PET runs ---------------------------
+  extra_data:     [] # ----------------------- All extra data -------------------------
+  leave_out:  # ----------------------- Data that will be left out -------------
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run1_SBRef_10/IM-0002-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: Lex_Dec_Run1
+      SeriesDescription: Lex_Dec_Run1_SBRef
+      ImageType: "['ORIGINAL', 'PRIMARY', 'M', 'ND', 'MOSAIC']"
+      SequenceName: epfid2d1_88
+      SequenceVariant: "['SK', 'SS']"
+      ScanningSequence: EP
+      MRAcquisitionType: 2D
+      SliceThickness: '2.4000000953674'
+      FlipAngle: '56'
+      EchoNumbers: 1
+      EchoTime: '35'
+      RepetitionTime: '1000'
+      PhaseEncodingDirection: ''
+    bids:
+      acq: LexDecRun1SBRef
+      rec:
+      ce:
+      task:
+      echo: '1'
+      dir: COL
+      run: <<1>>
+      mod:
+      suffix:
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run2_SBRef_16/IM-0004-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: Lex_Dec_Run2
+      SeriesDescription: Lex_Dec_Run2_SBRef
+      ImageType: "['ORIGINAL', 'PRIMARY', 'M', 'ND', 'MOSAIC']"
+      SequenceName: epfid2d1_88
+      SequenceVariant: "['SK', 'SS']"
+      ScanningSequence: EP
+      MRAcquisitionType: 2D
+      SliceThickness: '2.4000000953674'
+      FlipAngle: '56'
+      EchoNumbers: 1
+      EchoTime: '35'
+      RepetitionTime: '1000'
+      PhaseEncodingDirection: ''
+    bids:
+      acq: LexDecRun2SBRef
+      rec:
+      ce:
+      task:
+      echo: '1'
+      dir: COL
+      run: <<1>>
+      mod:
+      suffix:
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run3_SBRef_22/IM-0006-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: Lex_Dec_Run3
+      SeriesDescription: Lex_Dec_Run3_SBRef
+      ImageType: "['ORIGINAL', 'PRIMARY', 'M', 'ND', 'MOSAIC']"
+      SequenceName: epfid2d1_88
+      SequenceVariant: "['SK', 'SS']"
+      ScanningSequence: EP
+      MRAcquisitionType: 2D
+      SliceThickness: '2.4000000953674'
+      FlipAngle: '56'
+      EchoNumbers: 1
+      EchoTime: '35'
+      RepetitionTime: '1000'
+      PhaseEncodingDirection: ''
+    bids:
+      acq: LexDecRun3SBRef
+      rec:
+      ce:
+      task:
+      echo: '1'
+      dir: COL
+      run: <<1>>
+      mod:
+      suffix:
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run4_SBRef_28/IM-0008-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: Lex_Dec_Run4
+      SeriesDescription: Lex_Dec_Run4_SBRef
+      ImageType: "['ORIGINAL', 'PRIMARY', 'M', 'ND', 'MOSAIC']"
+      SequenceName: epfid2d1_88
+      SequenceVariant: "['SK', 'SS']"
+      ScanningSequence: EP
+      MRAcquisitionType: 2D
+      SliceThickness: '2.4000000953674'
+      FlipAngle: '56'
+      EchoNumbers: 1
+      EchoTime: '35'
+      RepetitionTime: '1000'
+      PhaseEncodingDirection: ''
+    bids:
+      acq: LexDecRun4SBRef
+      rec:
+      ce:
+      task:
+      echo: '1'
+      dir: COL
+      run: <<1>>
+      mod:
+      suffix:
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run5_SBRef_34/IM-0010-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: Lex_Dec_Run5
+      SeriesDescription: Lex_Dec_Run5_SBRef
+      ImageType: "['ORIGINAL', 'PRIMARY', 'M', 'ND', 'MOSAIC']"
+      SequenceName: epfid2d1_88
+      SequenceVariant: "['SK', 'SS']"
+      ScanningSequence: EP
+      MRAcquisitionType: 2D
+      SliceThickness: '2.4000000953674'
+      FlipAngle: '56'
+      EchoNumbers: 1
+      EchoTime: '35'
+      RepetitionTime: '1000'
+      PhaseEncodingDirection: ''
+    bids:
+      acq: LexDecRun5SBRef
+      rec:
+      ce:
+      task:
+      echo: '1'
+      dir: COL
+      run: <<1>>
+      mod:
+      suffix:
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run6_SBRef_40/IM-0012-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: Lex_Dec_Run6
+      SeriesDescription: Lex_Dec_Run6_SBRef
+      ImageType: "['ORIGINAL', 'PRIMARY', 'M', 'ND', 'MOSAIC']"
+      SequenceName: epfid2d1_88
+      SequenceVariant: "['SK', 'SS']"
+      ScanningSequence: EP
+      MRAcquisitionType: 2D
+      SliceThickness: '2.4000000953674'
+      FlipAngle: '56'
+      EchoNumbers: 1
+      EchoTime: '35'
+      RepetitionTime: '1000'
+      PhaseEncodingDirection: ''
+    bids:
+      acq: LexDecRun6SBRef
+      rec:
+      ce:
+      task:
+      echo: '1'
+      dir: COL
+      run: <<1>>
+      mod:
+      suffix:
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Localizers_2/IM-0014-0001-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: AAHead_Scout_64ch-head-coil
+      SeriesDescription: AAHead_Scout_64ch-head-coil_MPR_sag
+      ImageType: "['DERIVED', 'PRIMARY', 'MPR', 'ND', 'NORM']"
+      SequenceName: '*fl3d1_ns'
+      SequenceVariant: SP
+      ScanningSequence: GR
+      MRAcquisitionType: 3D
+      SliceThickness: '1.6000000238419'
+      FlipAngle: '8'
+      EchoNumbers: 1
+      EchoTime: '1.37'
+      RepetitionTime: '3.15'
+      PhaseEncodingDirection: ''
+    bids:
+      acq: AAHeadScout64chheadcoilMPRsag
+      rec:
+      ce:
+      task:
+      echo: '1'
+      dir: <InPlanePhaseEncodingDirection>
+      run: <<1>>
+      mod:
+      suffix:
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-03/Localizers_1/IM-0014-0001-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: AAHead_Scout_64ch-head-coil
+      SeriesDescription: AAHead_Scout_64ch-head-coil_MPR_tra
+      ImageType: "['DERIVED', 'PRIMARY', 'MPR', 'ND', 'NORM']"
+      SequenceName: '*fl3d1_ns'
+      SequenceVariant: SP
+      ScanningSequence: GR
+      MRAcquisitionType: 3D
+      SliceThickness: '1.6000000238419'
+      FlipAngle: '8'
+      EchoNumbers: 1
+      EchoTime: '1.37'
+      RepetitionTime: '3.15'
+      PhaseEncodingDirection: ''
+    bids:
+      acq: AAHeadScout64chheadcoilMPRtra
+      rec:
+      ce:
+      task:
+      echo: '1'
+      dir: <InPlanePhaseEncodingDirection>
+      run: <<1>>
+      mod:
+      suffix:
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-06/Localizers_1/IM-0028-0001-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: AAHead_Scout_64ch-head-coil
+      SeriesDescription: AAHead_Scout_64ch-head-coil_MPR_cor
+      ImageType: "['DERIVED', 'PRIMARY', 'MPR', 'ND', 'NORM']"
+      SequenceName: '*fl3d1_ns'
+      SequenceVariant: SP
+      ScanningSequence: GR
+      MRAcquisitionType: 3D
+      SliceThickness: '1.6000000238419'
+      FlipAngle: '8'
+      EchoNumbers: 1
+      EchoTime: '1.37'
+      RepetitionTime: '3.15'
+      PhaseEncodingDirection: ''
+    bids:
+      acq: AAHeadScout64chheadcoilMPRcor
+      rec:
+      ce:
+      task:
+      echo: '1'
+      dir: <InPlanePhaseEncodingDirection>
+      run: <<1>>
+      mod:
+      suffix:
+  - provenance: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-20/t2_space_sag_p2_1iso_MGH_46/IM-0014-0001-0001.dcm
+    attributes:
+      Modality: MR
+      ProtocolName: t2_space_sag_p2_1iso_MGH
+      SeriesDescription: t2_space_sag_p2_1iso_MGH
+      ImageType: "['ORIGINAL', 'PRIMARY', 'M', 'ND', 'NORM']"
+      SequenceName: '*spcR_230ns'
+      SequenceVariant: "['SK', 'SP']"
+      ScanningSequence: SE
+      MRAcquisitionType: 3D
+      SliceThickness: '1'
+      FlipAngle: '120'
+      EchoNumbers: 1
+      EchoTime: '389'
+      RepetitionTime: '3390'
+      PhaseEncodingDirection: ''
+    bids:
+      acq: t2spacesagp21isoMGH
+      rec:
+      ce:
+      task:
+      echo: '1'
+      dir: ROW
+      run: <<1>>
+      mod:
+      suffix:
+PAR:
+# --------------------------------------------------------------------------------
+# PAR key-value heuristics (Philips PAR fields that are mapped to the BIDS labels)
+# --------------------------------------------------------------------------------
+  subject: <<SourceFilePath>>     # <<SourceFilePath>> extracts the subject label from the source directory during bidscoiner runtime. A DICOM attribute can also be used as subject-label instead, e.g. <PatientID>
+  session: <<SourceFilePath>>     # <<SourceFilePath>> extracts the session label from the source directory during bidscoiner runtime. A DICOM attribute can also be used as session-label instead, e.g. <StudyID>
+  anat:       # ----------------------- All anatomical runs --------------------
+  func:       # ----------------------- All functional runs --------------------
+  dwi:        # ----------------------- All diffusion runs ---------------------
+  fmap:       # ----------------------- All fieldmap runs ----------------------
+  beh:        # ----------------------- All behavioural data -------------------
+  pet:        # ----------------------- All PET runs ---------------------------
+  extra_data: # ----------------------- All extra data -------------------------
+  leave_out:  # ----------------------- Data that will be left out -------------
+P7:
+# --------------------------------------------------------------------------------
+# P*.7 key-value heuristics (GE fields that are mapped to the BIDS labels)
+# --------------------------------------------------------------------------------
+
+
+Nifti:
+# --------------------------------------------------------------------------------
+# Nifti key-value heuristics (Nifti fields that are mapped to the BIDS labels)
+# --------------------------------------------------------------------------------
+
+
+FileSystem:
+# --------------------------------------------------------------------------------
+# File system key-value heuristics (these file- and foldernames will be mapped
+# to the BIDS labels; Special substitutions can be performed using python's
+# Format Specification Mini-Language)
+# --------------------------------------------------------------------------------
+  subject: <<SourceFilePath>>       # <<SourceFilePath>> extracts the subject label from the source directory during bidscoiner runtime
+  session: <<SourceFilePath>>       # <<SourceFilePath>> extracts the session label from the source directory during bidscoiner runtime
+  anat:       # ----------------------- All anatomical runs --------------------
+  func:       # ----------------------- All functional runs --------------------
+  dwi:        # ----------------------- All diffusion runs ---------------------
+  fmap:       # ----------------------- All fieldmap runs ----------------------
+  beh:        # ----------------------- All behavioural data -------------------
+  extra_data: # ----------------------- All extra data -------------------------
+  leave_out:  # ----------------------- Data that will be left out -------------

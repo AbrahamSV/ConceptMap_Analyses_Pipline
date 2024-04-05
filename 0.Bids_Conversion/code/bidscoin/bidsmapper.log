@@ -1,0 +1,137 @@
+2023-05-19 17:52:47 - bidscoin - INFO 
+2023-05-19 17:52:47 - bidscoin - INFO -------------- START BIDSmapper ------------
+2023-05-19 17:52:47 - bidscoin - INFO >>> bidsmapper sourcefolder=/bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images bidsfolder=/bcbl/home/home_a-f/asanchez/conceptmap/data/raw/bids bidsmap=bidsmap.yaml  template=bidsmap_template.yaml subprefix=sub- sesprefix=ses- store=False interactive=1
+2023-05-19 17:52:47 - bidscoin - INFO No existing bidsmap file found: /opt/anaconda3/lib/python3.7/site-packages/heuristics/bidsmap.yaml
+2023-05-19 17:52:47 - bidscoin - INFO Reading: /opt/anaconda3/lib/python3.7/site-packages/heuristics/bidsmap_template.yaml
+2023-05-19 17:52:48 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00 (subject 1/30)
+2023-05-19 17:52:50 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run1_11/IM-0003-0001.dcm
+2023-05-19 17:52:51 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run1_SBRef_10/IM-0002-0001.dcm
+2023-05-19 17:52:51 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run2_17/IM-0005-0001.dcm
+2023-05-19 17:52:52 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run2_SBRef_16/IM-0004-0001.dcm
+2023-05-19 17:52:53 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run3_23/IM-0007-0001.dcm
+2023-05-19 17:52:53 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run3_SBRef_22/IM-0006-0001.dcm
+2023-05-19 17:52:54 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run4_29/IM-0009-0001.dcm
+2023-05-19 17:52:55 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run4_SBRef_28/IM-0008-0001.dcm
+2023-05-19 17:52:55 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run5_35/IM-0011-0001.dcm
+2023-05-19 17:52:56 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run5_SBRef_34/IM-0010-0001.dcm
+2023-05-19 17:52:57 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run6_41/IM-0013-0001.dcm
+2023-05-19 17:52:57 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run6_SBRef_40/IM-0012-0001.dcm
+2023-05-19 17:52:58 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Localizers_2/IM-0014-0001-0001.dcm
+2023-05-19 17:52:58 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/t1_mprage_sag_p2_1iso_MGH_5/IM-0001-0001.dcm
+2023-05-19 17:52:58 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-01 (subject 2/30)
+2023-05-19 17:53:10 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-02 (subject 3/30)
+2023-05-19 17:53:21 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-03 (subject 4/30)
+2023-05-19 17:53:32 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-03/Localizers_1/IM-0014-0001-0001.dcm
+2023-05-19 17:53:33 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-04 (subject 5/30)
+2023-05-19 17:53:45 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-05 (subject 6/30)
+2023-05-19 17:53:56 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-06 (subject 7/30)
+2023-05-19 17:54:07 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-06/Localizers_1/IM-0028-0001-0001.dcm
+2023-05-19 17:54:08 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-07 (subject 8/30)
+2023-05-19 17:54:21 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-08 (subject 9/30)
+2023-05-19 17:54:33 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-09 (subject 10/30)
+2023-05-19 17:54:44 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-10 (subject 11/30)
+2023-05-19 17:54:56 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-11 (subject 12/30)
+2023-05-19 17:55:08 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-12 (subject 13/30)
+2023-05-19 17:55:20 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-13 (subject 14/30)
+2023-05-19 17:55:34 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-14 (subject 15/30)
+2023-05-19 17:55:46 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-15 (subject 16/30)
+2023-05-19 17:55:57 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-16 (subject 17/30)
+2023-05-19 17:56:08 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-17 (subject 18/30)
+2023-05-19 17:56:20 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-18 (subject 19/30)
+2023-05-19 17:56:32 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-19 (subject 20/30)
+2023-05-19 17:56:45 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-20 (subject 21/30)
+2023-05-19 17:56:57 - bidscoin - INFO Found 'extra_data' DICOM sample: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-20/t2_space_sag_p2_1iso_MGH_46/IM-0014-0001-0001.dcm
+2023-05-19 17:56:57 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-21 (subject 22/30)
+2023-05-19 17:57:09 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-22 (subject 23/30)
+2023-05-19 17:57:20 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-23 (subject 24/30)
+2023-05-19 17:57:31 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-24 (subject 25/30)
+2023-05-19 17:57:44 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-25 (subject 26/30)
+2023-05-19 17:57:55 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-26 (subject 27/30)
+2023-05-19 17:58:06 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-27 (subject 28/30)
+2023-05-19 17:58:19 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-28 (subject 29/30)
+2023-05-19 17:58:30 - bidscoin - INFO Parsing: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-29 (subject 30/30)
+2023-05-19 17:58:40 - bidscoin - INFO Writing bidsmap to: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/bids/code/bidscoin/bidsmap.yaml
+2023-05-19 17:58:47 - bidscoin - INFO Opening the bidseditor
+2023-05-19 17:59:04 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run1_SBRef_10/IM-0002-0001.dcm
+2023-05-19 17:59:07 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'leave_out' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run1_SBRef_10/IM-0002-0001.dcm
+2023-05-19 17:59:08 - bidscoin - INFO User has approved the edit
+2023-05-19 17:59:10 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run2_SBRef_16/IM-0004-0001.dcm
+2023-05-19 17:59:13 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'leave_out' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run2_SBRef_16/IM-0004-0001.dcm
+2023-05-19 17:59:14 - bidscoin - INFO User has approved the edit
+2023-05-19 17:59:19 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run3_SBRef_22/IM-0006-0001.dcm
+2023-05-19 17:59:21 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'leave_out' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run3_SBRef_22/IM-0006-0001.dcm
+2023-05-19 17:59:22 - bidscoin - INFO User has approved the edit
+2023-05-19 17:59:52 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run4_SBRef_28/IM-0008-0001.dcm
+2023-05-19 17:59:54 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'leave_out' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run4_SBRef_28/IM-0008-0001.dcm
+2023-05-19 17:59:54 - bidscoin - INFO User has approved the edit
+2023-05-19 17:59:57 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run5_SBRef_34/IM-0010-0001.dcm
+2023-05-19 17:59:58 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'leave_out' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run5_SBRef_34/IM-0010-0001.dcm
+2023-05-19 17:59:59 - bidscoin - INFO User has approved the edit
+2023-05-19 18:00:02 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run6_SBRef_40/IM-0012-0001.dcm
+2023-05-19 18:00:04 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'leave_out' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run6_SBRef_40/IM-0012-0001.dcm
+2023-05-19 18:00:05 - bidscoin - INFO User has approved the edit
+2023-05-19 18:00:09 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Localizers_2/IM-0014-0001-0001.dcm
+2023-05-19 18:00:11 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'leave_out' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Localizers_2/IM-0014-0001-0001.dcm
+2023-05-19 18:00:11 - bidscoin - INFO User has approved the edit
+2023-05-19 18:00:16 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-03/Localizers_1/IM-0014-0001-0001.dcm
+2023-05-19 18:00:19 - bidscoin - INFO User has approved the edit
+2023-05-19 18:00:21 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-03/Localizers_1/IM-0014-0001-0001.dcm
+2023-05-19 18:00:23 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'leave_out' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-03/Localizers_1/IM-0014-0001-0001.dcm
+2023-05-19 18:00:23 - bidscoin - INFO User has approved the edit
+2023-05-19 18:00:25 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-06/Localizers_1/IM-0028-0001-0001.dcm
+2023-05-19 18:00:27 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'leave_out' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-06/Localizers_1/IM-0028-0001-0001.dcm
+2023-05-19 18:00:28 - bidscoin - INFO User has approved the edit
+2023-05-19 18:00:36 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-20/t2_space_sag_p2_1iso_MGH_46/IM-0014-0001-0001.dcm
+2023-05-19 18:00:38 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'leave_out' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-20/t2_space_sag_p2_1iso_MGH_46/IM-0014-0001-0001.dcm
+2023-05-19 18:00:41 - bidscoin - INFO User has approved the edit
+2023-05-19 18:00:49 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run1_11/IM-0003-0001.dcm
+2023-05-19 18:00:52 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'func' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run1_11/IM-0003-0001.dcm
+2023-05-19 18:01:10 - bidscoin - INFO User has set bids['task'] from 'LexDecRun1' to 'LexDec' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run1_11/IM-0003-0001.dcm
+2023-05-19 18:01:29 - bidscoin - INFO User has approved the edit
+2023-05-19 18:01:32 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run2_17/IM-0005-0001.dcm
+2023-05-19 18:01:39 - bidscoin - INFO User has set bids['acq'] from 'LexDecRun2' to 'LexDec' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run2_17/IM-0005-0001.dcm
+2023-05-19 18:01:42 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'func' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run2_17/IM-0005-0001.dcm
+2023-05-19 18:01:49 - bidscoin - INFO User has set bids['task'] from 'LexDecRun2' to 'LexDec' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run2_17/IM-0005-0001.dcm
+2023-05-19 18:01:56 - bidscoin - WARNING Expert usage: User has set bids['run'] from '<<1>>' to '<<2>>' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run2_17/IM-0005-0001.dcm
+2023-05-19 18:02:04 - bidscoin - INFO User has approved the edit
+2023-05-19 18:03:10 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run3_23/IM-0007-0001.dcm
+2023-05-19 18:03:12 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'func' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run3_23/IM-0007-0001.dcm
+2023-05-19 18:03:16 - bidscoin - INFO User has set bids['task'] from 'LexDecRun3' to 'LexDec' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run3_23/IM-0007-0001.dcm
+2023-05-19 18:03:23 - bidscoin - WARNING Expert usage: User has set bids['run'] from '<<1>>' to '<<3>>' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run3_23/IM-0007-0001.dcm
+2023-05-19 18:03:25 - bidscoin - INFO User has approved the edit
+2023-05-19 18:03:29 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run4_29/IM-0009-0001.dcm
+2023-05-19 18:03:32 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'func' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run4_29/IM-0009-0001.dcm
+2023-05-19 18:03:36 - bidscoin - INFO User has set bids['task'] from 'LexDecRun4' to 'LexDec' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run4_29/IM-0009-0001.dcm
+2023-05-19 18:03:40 - bidscoin - WARNING Expert usage: User has set bids['run'] from '<<1>>' to '<<4>>' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run4_29/IM-0009-0001.dcm
+2023-05-19 18:03:41 - bidscoin - INFO User has approved the edit
+2023-05-19 18:03:43 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run5_35/IM-0011-0001.dcm
+2023-05-19 18:03:46 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'func' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run5_35/IM-0011-0001.dcm
+2023-05-19 18:03:49 - bidscoin - WARNING Expert usage: User has set bids['run'] from '<<1>>' to '<<5>>' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run5_35/IM-0011-0001.dcm
+2023-05-19 18:03:53 - bidscoin - INFO User has set bids['task'] from 'LexDecRun5' to 'LexDec' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run5_35/IM-0011-0001.dcm
+2023-05-19 18:03:54 - bidscoin - INFO User has approved the edit
+2023-05-19 18:03:57 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run6_41/IM-0013-0001.dcm
+2023-05-19 18:04:02 - bidscoin - WARNING Expert usage: User has set bids['run'] from '<<1>>' to '<<6>>' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run6_41/IM-0013-0001.dcm
+2023-05-19 18:04:05 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'func' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run6_41/IM-0013-0001.dcm
+2023-05-19 18:04:09 - bidscoin - WARNING Expert usage: User has set bids['run'] from '<<1>>' to '<<6>>' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run6_41/IM-0013-0001.dcm
+2023-05-19 18:04:13 - bidscoin - INFO User has set bids['task'] from 'LexDecRun6' to 'LexDec' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run6_41/IM-0013-0001.dcm
+2023-05-19 18:04:14 - bidscoin - INFO User has approved the edit
+2023-05-19 18:04:23 - bidscoin - INFO User is editing /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/t1_mprage_sag_p2_1iso_MGH_5/IM-0001-0001.dcm
+2023-05-19 18:04:28 - bidscoin - INFO User has changed the BIDS modality from 'extra_data' to 'anat' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/t1_mprage_sag_p2_1iso_MGH_5/IM-0001-0001.dcm
+2023-05-19 18:04:32 - bidscoin - INFO User has approved the edit
+2023-05-19 18:05:09 - bidscoin - INFO Writing bidsmap to: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/bids/code/bidscoin/bidsmap.yaml
+2023-05-19 18:05:15 - bidscoin - INFO Writing bidsmap to: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/bids/code/bidscoin/bidsmap.yaml
+2023-05-19 18:05:17 - bidscoin - INFO -------------- FINISHED! -------------------
+2023-05-19 18:05:17 - bidscoin - INFO 
+2023-05-19 18:05:17 - bidscoin - INFO The following BIDScoin errors and warnings were reported:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2023-05-19 18:01:56 - bidscoin - WARNING Expert usage: User has set bids['run'] from '<<1>>' to '<<2>>' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run2_17/IM-0005-0001.dcm
+2023-05-19 18:03:23 - bidscoin - WARNING Expert usage: User has set bids['run'] from '<<1>>' to '<<3>>' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run3_23/IM-0007-0001.dcm
+2023-05-19 18:03:40 - bidscoin - WARNING Expert usage: User has set bids['run'] from '<<1>>' to '<<4>>' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run4_29/IM-0009-0001.dcm
+2023-05-19 18:03:49 - bidscoin - WARNING Expert usage: User has set bids['run'] from '<<1>>' to '<<5>>' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run5_35/IM-0011-0001.dcm
+2023-05-19 18:04:02 - bidscoin - WARNING Expert usage: User has set bids['run'] from '<<1>>' to '<<6>>' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run6_41/IM-0013-0001.dcm
+2023-05-19 18:04:09 - bidscoin - WARNING Expert usage: User has set bids['run'] from '<<1>>' to '<<6>>' for /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/images/sub-00/Lex_Dec_Run6_41/IM-0013-0001.dcm
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2023-05-19 18:05:17 - bidscoin - INFO For the complete log see: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/bids/code/bidscoin/bidsmapper.log
+2023-05-19 18:05:17 - bidscoin - INFO NB: /bcbl/home/home_a-f/asanchez/conceptmap/data/raw/bids/code/bidscoin may contain privacy sensitive information, e.g. pathnames in logfiles and provenance data samples
