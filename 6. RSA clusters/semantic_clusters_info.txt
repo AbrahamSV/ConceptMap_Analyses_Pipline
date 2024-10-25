@@ -1,0 +1,198 @@
+++ Input coordinates orientation set by default rules to RAI
+++ In ordered mode ...
+++ Have 6 unique values of:
+   0   1   2   3   4   5
+++ Skipping unique value of 0
+++ ========================================================================
+++ Processing unique value of 1
+++    25498 voxels in ROI
+++    25498 voxels in atlas-resampled mask
+Intersection of ROI (valued 1) with atlas MNI_Glasser_HCP_v1.0 (sb0):
+   10.8 % overlap with L_Area_45, code 75
+   7.6  % overlap with L_Area_8C, code 73
+   7.2  % overlap with L_Area__IFSa, code 82
+   6.6  % overlap with L_Area_posterior_9-46v, code 83
+   5.3  % overlap with L_Area_IFSp, code 81
+   4.8  % overlap with L_Area_44, code 74
+   4.4  % overlap with L_Area_47l_(47_lateral), code 76
+   3.7  % overlap with L_Area_STGa, code 123
+   3.2  % overlap with L_Auditory_5_Complex, code 125
+   2.5  % overlap with L_Area_STSd_anterior, code 128
+   2.2  % overlap with L_Area_posterior_47r, code 171
+   2.1  % overlap with L_Area_TE1_anterior, code 132
+   2.1  % overlap with L_Area_47m, code 66
+   1.8  % overlap with L_Area_IFJp, code 80
+   1.8  % overlap with L_Area_Frontal_Opercular, code 169
+   1.6  % overlap with L_Area_IFJa, code 79
+   1.5  % overlap with L_Area_anterior_47r, code 77
+   1.0  % overlap with L_Area_46, code 84
+   0.9  % overlap with L_Area_47s, code 94
+   0.7  % overlap with L_Rostral_Area_6, code 78
+   0.6  % overlap with L_Area_8Av, code 67
+   0.5  % overlap with L_Area_55b, code 12
+   0.4  % overlap with L_Premotor_Eye_Fields, code 11
+   0.1  % overlap with L_Area_TA2, code 107
+   0.1  % overlap with L_Area_TG_dorsal, code 131
+   0.1  % overlap with L_Area_anterior_9-46v, code 85
+   0.1  % overlap with L_Area_STSv_anterior, code 176
+   0.1  % overlap with L_Area_11l, code 91
+   0.1  % overlap with L_Auditory_4_Complex, code 175
+   0.0  % overlap with L_Frontal_Opercular_Area_4, code 108
+   0.0  % overlap with L_Anterior_Agranular_Insula_Complex, code 112
+   0.0  % overlap with L_Area_43, code 99
+   0.0  % overlap with L_Ventral_Area_6, code 56
+   -----
+   73.9 % of cluster accounted for.
+
+++    25498 voxels in atlas-resampled mask
+Intersection of ROI (valued 1) with atlas CA_MPM_22_MNI (sb0):
+   14.8 % overlap with Area_45, code 129
+   4.9  % overlap with Area_TE_3, code 181
+   3.9  % overlap with Area_44, code 246
+   0.2  % overlap with Area_Fo3, code 145
+   -----
+   23.8 % of cluster accounted for.
+
+++    25498 voxels in atlas-resampled mask
+Intersection of ROI (valued 1) with atlas CA_ML_18_MNI (sb0):
+   48.6 % overlap with Left_Inferior_Frontal_Gyrus_(p._Triangularis), code 13
+   16.2 % overlap with Left_Inferior_Frontal_Gyrus_(p._Orbitalis), code 15
+   9.9  % overlap with Left_Precentral_Gyrus, code 1
+   6.9  % overlap with Left_Inferior_Frontal_Gyrus_(p._Opercularis), code 11
+   5.1  % overlap with Left_Temporal_Pole, code 83
+   4.4  % overlap with Left_Middle_Temporal_Gyrus, code 85
+   3.6  % overlap with Left_Superior_Temporal_Gyrus, code 81
+   3.4  % overlap with Left_Middle_Frontal_Gyrus, code 7
+   0.0  % overlap with Left_Rolandic_Operculum, code 17
+   0.0  % overlap with Left_Medial_Temporal_Pole, code 87
+   -----
+   98.1 % of cluster accounted for.
+
+++ ========================================================================
+++ Processing unique value of 2
+++    4523 voxels in ROI
+++    4523 voxels in atlas-resampled mask
+Intersection of ROI (valued 2) with atlas MNI_Glasser_HCP_v1.0 (sb0):
+   28.4 % overlap with R_Anterior_Ventral_Insular_Area, code 1111
+   10.1 % overlap with R_Area_47m, code 1066
+   9.2  % overlap with R_Area_Frontal_Opercular, code 1169
+   8.7  % overlap with R_Area_47s, code 1094
+   5.1  % overlap with R_Area_anterior_47r, code 1077
+   3.5  % overlap with R_Area_47l_(47_lateral), code 1076
+   2.5  % overlap with R_Area_11l, code 1091
+   1.6  % overlap with R_Anterior_Agranular_Insula_Complex, code 1112
+   1.0  % overlap with R_Middle_Insular_Area, code 1109
+   0.4  % overlap with R_Area_13l, code 1092
+   0.3  % overlap with R_Area_45, code 1075
+   -----
+   70.7 % of cluster accounted for.
+
+++    4523 voxels in atlas-resampled mask
+Intersection of ROI (valued 2) with atlas CA_MPM_22_MNI (sb0):
+   7.7  % overlap with Area_Fo3, code 145
+   -----
+   7.7  % of cluster accounted for.
+
+++    4523 voxels in atlas-resampled mask
+Intersection of ROI (valued 2) with atlas CA_ML_18_MNI (sb0):
+   52.0 % overlap with Right_Inferior_Frontal_Gyrus_(p._Orbitalis), code 16
+   20.8 % overlap with Right_Insula_Lobe, code 30
+   7.6  % overlap with Right_Middle_Orbital_Gyrus, code 10
+   3.5  % overlap with Right_Inferior_Frontal_Gyrus_(p._Triangularis), code 14
+   0.0  % overlap with Right_Putamen, code 74
+   -----
+   83.9 % of cluster accounted for.
+
+++ ========================================================================
+++ Processing unique value of 3
+++    4487 voxels in ROI
+++    4487 voxels in atlas-resampled mask
+Intersection of ROI (valued 3) with atlas MNI_Glasser_HCP_v1.0 (sb0):
+   19.6 % overlap with L_Area_TemporoParietoOccipital_Junction_1, code 139
+   17.5 % overlap with L_Area_STSv_posterior, code 130
+   13.7 % overlap with L_Auditory_5_Complex, code 125
+   12.3 % overlap with L_Area_TE1_posterior, code 133
+   12.2 % overlap with L_Area_STSd_posterior, code 129
+   7.7  % overlap with L_Area_PHT, code 137
+   3.1  % overlap with L_Superior_Temporal_Visual_Area, code 28
+   0.1  % overlap with L_Auditory_4_Complex, code 175
+   -----
+   86.3 % of cluster accounted for.
+
+++    4487 voxels in atlas-resampled mask
+Intersection of ROI (valued 3) with atlas CA_MPM_22_MNI (sb0):
+   9.3  % overlap with Area_TE_3, code 181
+   0.4  % overlap with Area_PFm_(IPL), code 128
+   0.2  % overlap with Area_PF_(IPL), code 136
+   0.0  % overlap with Area_PFcm_(IPL), code 153
+   -----
+   9.9  % of cluster accounted for.
+
+++    4487 voxels in atlas-resampled mask
+Intersection of ROI (valued 3) with atlas CA_ML_18_MNI (sb0):
+   88.5 % overlap with Left_Middle_Temporal_Gyrus, code 85
+   6.0  % overlap with Left_Superior_Temporal_Gyrus, code 81
+   -----
+   94.5 % of cluster accounted for.
+
+++ ========================================================================
+++ Processing unique value of 4
+++    3584 voxels in ROI
+++    3584 voxels in atlas-resampled mask
+Intersection of ROI (valued 4) with atlas MNI_Glasser_HCP_v1.0 (sb0):
+   28.8 % overlap with R_Area_8BM, code 1063
+   11.7 % overlap with L_Area_8BM, code 63
+   10.6 % overlap with R_Superior_Frontal_Language_Area, code 1026
+   9.1  % overlap with L_Superior_Frontal_Language_Area, code 26
+   7.9  % overlap with R_Area_8B_Lateral, code 1070
+   3.5  % overlap with L_Area_8B_Lateral, code 70
+   1.9  % overlap with R_Supplementary_And_Cingulate_Eye, code 1043
+   0.2  % overlap with L_Supplementary_And_Cingulate_Eye, code 43
+   -----
+   73.6 % of cluster accounted for.
+
+++    3584 voxels in atlas-resampled mask
+Intersection of ROI (valued 4) with atlas CA_MPM_22_MNI (sb0):
+   -----
+   0.0  % of cluster accounted for.
+
+++    3584 voxels in atlas-resampled mask
+Intersection of ROI (valued 4) with atlas CA_ML_18_MNI (sb0):
+   31.7 % overlap with Right_Superior_Medial_Gyrus, code 24
+   23.1 % overlap with Left_SMA, code 19
+   21.6 % overlap with Left_Superior_Medial_Gyrus, code 23
+   20.5 % overlap with Right_SMA, code 20
+   0.8  % overlap with Right_Superior_Frontal_Gyrus, code 4
+   0.8  % overlap with Left_Superior_Frontal_Gyrus, code 3
+   -----
+   98.5 % of cluster accounted for.
+
+++ ========================================================================
+++ Processing unique value of 5
+++    1377 voxels in ROI
+++    1377 voxels in atlas-resampled mask
+Intersection of ROI (valued 5) with atlas MNI_Glasser_HCP_v1.0 (sb0):
+   34.1 % overlap with R_Area_posterior_9-46v, code 1083
+   25.8 % overlap with R_Area_IFSp, code 1081
+   10.9 % overlap with R_Area_IFJa, code 1079
+   1.7  % overlap with R_Area_44, code 1074
+   1.5  % overlap with R_Area_8C, code 1073
+   0.1  % overlap with R_Area_8Av, code 1067
+   0.1  % overlap with R_Area_46, code 1084
+   -----
+   74.1 % of cluster accounted for.
+
+++    1377 voxels in atlas-resampled mask
+Intersection of ROI (valued 5) with atlas CA_MPM_22_MNI (sb0):
+   3.8  % overlap with Area_45, code 129
+   -----
+   3.8  % of cluster accounted for.
+
+++    1377 voxels in atlas-resampled mask
+Intersection of ROI (valued 5) with atlas CA_ML_18_MNI (sb0):
+   83.7 % overlap with Right_Inferior_Frontal_Gyrus_(p._Triangularis), code 14
+   8.9  % overlap with Right_Middle_Frontal_Gyrus, code 8
+   1.5  % overlap with Right_Inferior_Frontal_Gyrus_(p._Opercularis), code 12
+   -----
+   94.0 % of cluster accounted for.
+
