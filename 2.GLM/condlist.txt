@@ -1,9 +1,0 @@
-abs_lfam_low
-abs_lfam_hi
-abs_hfam_low
-abs_hfam_hi
-con_lfam_low
-con_lfam_hi
-con_hfam_low
-con_hfam_hi
-nonword
